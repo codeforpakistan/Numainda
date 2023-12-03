@@ -1,0 +1,86 @@
+[project]
+# Whether to enable telemetry (default: true). No personal data is collected.
+enable_telemetry = true
+
+# List of environment variables to be provided by each user to use the app.
+user_env = []
+
+# Duration (in seconds) during which the session is saved when the connection is lost
+session_timeout = 3600
+
+# Enable third parties caching (e.g LangChain cache)
+cache = false
+
+# Follow symlink for asset mount (see https://github.com/Chainlit/chainlit/issues/317)
+# follow_symlink = false
+
+[features]
+# Show the prompt playground
+prompt_playground = true
+
+# Process and display HTML in messages. This can be a security risk (see https://stackoverflow.com/questions/19603097/why-is-it-dangerous-to-render-user-generated-html-or-javascript)
+unsafe_allow_html = false
+
+# Process and display mathematical expressions. This can clash with "$" characters in messages.
+latex = false
+
+# Authorize users to upload files with messages
+multi_modal = false
+
+# Allows user to use speech to text
+[features.speech_to_text]
+    enabled = true
+    # See all languages here https://github.com/JamesBrill/react-speech-recognition/blob/HEAD/docs/API.md#language-string
+    language = "en-US"
+
+[UI]
+# Name of the app and chatbot.
+name = "Numainda"
+
+# Show the readme while the conversation is empty.
+show_readme_as_default = true
+
+# Description of the app and chatbot. This is used for HTML tags.
+description = "Numainda is an AI-powered bot that provides information on Pakistan's National Assembly activities, parses bulletins into a machine-readable format, and allows for contextual querying through a chat interface."
+
+# Large size content are by default collapsed for a cleaner ui
+default_collapse_content = true
+
+# The default value for the expand messages settings.
+default_expand_messages = false
+
+# Hide the chain of thought details from the user in the UI.
+hide_cot = false
+
+# Link to your github repo. This will add a github button in the UI's header.
+# github = "https://github.com/codeforpakistan/numainda"
+
+# Specify a CSS file that can be used to customize the user interface.
+# The CSS file can be served from the public directory or via an external link.
+# custom_css = "/public/test.css"
+
+# Override default MUI light theme. (Check theme.ts)
+[UI.theme.light]
+    background = "#F0F4EF"  # Soft beige
+    paper = "#FFFFFF"      # White
+
+    [UI.theme.light.primary]
+        main = "#B4D2BA"       # Pastel green
+        dark = "#8AA69A"       # Darker shade of pastel green
+        light = "#DAEAE5"      # Very light green
+
+
+# Override default MUI dark theme. (Check theme.ts)
+[UI.theme.dark]
+    background = "#3C444C"  # Dark gray
+    paper = "#515C66"      # Slightly lighter gray
+
+    [UI.theme.dark.primary]
+        main = "#7FA8A4"       # Soft blue-green
+        dark = "#597D74"       # Darker shade of blue-green
+        light = "#A3C1BD"      # Lighter pastel blue-green
+
+
+
+[meta]
+generated_by = "0.7.700"

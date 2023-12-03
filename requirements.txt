@@ -1,0 +1,5 @@
+openai==0.28.0
+pypdf==3.17.1
+chainlit==0.7.700
+langchain==0.0.345
+llama-index==0.9.11py

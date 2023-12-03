@@ -1,0 +1,12 @@
+venv/
+*.pyc
+__pycache__/
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+*.ipnb_checkpoints
+storage/
+PDFs/
