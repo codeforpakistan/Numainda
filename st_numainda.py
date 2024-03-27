@@ -18,6 +18,16 @@ st.title("Numainda",)
 st.image('Numainda no BG Logo.png')
 st.write("A knowledge bot designed to engage and educate on Pakistan's rich legal and parliamentary heritage. Drawing on the Constitution of Pakistan, the Elections Act 2017, and the latest parliamentary proceedings, Numainda shares fascinating legal and legislative facts in a fun, engaging manner.")
 
+st.markdown("""*Things You Can Ask Me:*
+            
+                * Tell me an interesting fact from the constitution of Pakistan.
+            
+    * What is the role of the Parliament in Pakistan?
+            
+    * What happened in the parliament on 15th march 2024?
+            """)
+
+
 if st.button("Start Chat"):
     st.session_state.start_chat = True
     thread = client.beta.threads.create()
