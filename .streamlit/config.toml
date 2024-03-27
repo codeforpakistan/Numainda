@@ -1,0 +1,8 @@
+[theme]
+# Default settings: These are used if the user doesn't specify a preference
+# and the system preference can't be determined.
+primaryColor = "#FFD700"
+backgroundColor = "#FFFFFF"
+secondaryBackgroundColor = "#F0F0F0"
+textColor = "#000000"
+font = "sans serif"

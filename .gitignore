@@ -1,0 +1,9 @@
+venv/
+venv/              # Ignore virtual environment folder
+*.pyc              # Ignore compiled Python files
+__pycache__/       # Ignore Python cache folder
+*.egg-info/        # Ignore Python package metadata
+dist/              # Ignore distribution folder
+build/             # Ignore build artifacts
+*.log              # Ignore log files
+.env               # Ignore environment file
