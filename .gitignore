@@ -7,3 +7,4 @@ dist/              # Ignore distribution folder
 build/             # Ignore build artifacts
 *.log              # Ignore log files
 .env               # Ignore environment file
+.streamlit/secrets.toml # Ignore Streamlit secrets file
