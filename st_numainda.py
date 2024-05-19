@@ -2,9 +2,6 @@ import openai
 import streamlit as st
 import time
 from classes.assistant import Assistant
-
-from dotenv import load_dotenv
-load_dotenv()
    
 assistant_id = st.secrets["ASSISTANT_ID"]
 
